@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="detectinfo",
-    version="1.2",
+    version="1.1",
     description="A useful module for detect sensitive information/secrets",
     author="sanket bahir",
     packages=find_packages(),
