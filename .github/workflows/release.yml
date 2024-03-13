@@ -27,7 +27,7 @@ jobs:
       run: pip install wheel
     - name: Update version number
       env:
-        PACKAGE_NAME: src
+        PACKAGE_NAME: sensitive_info_detector
         NEW_VERSION: ${{ github.event.inputs.new_version }}
       run: sed -i "s#_version_ = \".*\"#_version_ = \"$NEW_VERSION\"#" $PACKAGE_NAME/version.py
     - name: Build package
