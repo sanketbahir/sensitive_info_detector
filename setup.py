@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
+from sensitive_info_detector.version import __version__
 
 setup(
     name="detectinfo",
-    version="1.1",
+    version=__version__,
     description="A useful module for detect sensitive information/secrets",
     author="sanket bahir",
     packages=find_packages(),
